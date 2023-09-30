@@ -1,2 +1,41 @@
 # Music_EDA
- EDA for songs played in polish radio stations in 2012-2022
+Exploratory data analysis for songs played in polish radio stations in 2012-2022
+The variables are scraped from odsluchane.eu website, spotify API or are derivative variables.
+
+ID - Song's unique ID
+Full_song_name	- Full song's name including authors, the title and suffixes like "remix" or "feat"
+Author	- Just author of the song
+Title - Just song's title and said suffix if exists.
+Antyradio,	Chillzet,	Czwórka,	Dwójka,	Eska,	Jedynka,	RMF_Classic,	RMF_FM,	RMF_MAXXX,	Trójka,	VOX_FM,	ZET,	Złote_Przeboje	- How many times each song was played in each radio station between 2012 and 2022.
+Total_plays - How many times each song was played in total between 2012 and 2022.
+
+danceability	- Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
+energy	- Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual                 features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.
+key	- Decoded key_code
+key_code	- The key the track is in. Integers map to pitches using standard Pitch Class notation. E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on. If no key was detected, the value is -1.
+mode	- Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.
+loudness	- The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical                   strength (amplitude). Values typically range between -60 and 0 db.
+speechiness	- Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of                 spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks.
+acousticness	- A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.
+instrumentalness	-
+liveness	- Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.
+valence	- A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
+tempo	- The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.
+duration_ms	- The duration of the track in milliseconds.
+time_signature - An estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of "3/4", to "7/4".
+Release_year - The date the album was first released.
+Popularity - The popularity of the track. The value will be between 0 and 100, with 100 being the most popular. The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had on te spotify platform and how
+             recent those plays are. Generally speaking, songs that are being played a lot now will have a higher popularity than songs that were played a lot in the past.
+
+Antyradio_year_mean,	Chillzet_year_mean,	Czwórka_year_mean,	Dwójka_year_mean,	Eska_year_mean,	Jedynka_year_mean,	RMF_Classic_year_mean,
+                     RMF_FM_year_mean,	RMF_MAXXX_year_mean,	Trójka_year_mean,	VOX_FM_year_mean,	ZET_year_mean,	Złote_Przeboje_year_mean - How many times on average each song was played in each radio station yearly. If the song was released between 2012 and 2022 total                                                                                                                                             number of plays is divided by years from release to 2022. If it was released before 2012, total number of plays is divided by 10.
+Total_plays_year_mean - The same as above. Based on Total_plays.
+Versatility - Variable designed to reflect how many radio stations play each song. Takes values from 0 to 1. Zero means that only one radio station played that song, one means that every radio station played that song excactly in the same amount.
+
+
+
+
+
+
+
+
